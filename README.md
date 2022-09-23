@@ -16,9 +16,6 @@
     <img align="center" height="30" width="40" alt="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
     <img align="center" height="30" width="40" alt="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
     <img align="center" height="30" width="40" alt="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-    <img align="center" height="30" width="40" alt="ReactJs" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-    <img align="center" height="30" width="40" alt="MaterialUI" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg">
-    <img align="center" height="30" width="40" alt="NodeJs" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" >
 </div>
   
   ##
