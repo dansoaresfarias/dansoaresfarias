@@ -20,7 +20,7 @@
 
   ##
 <div align="center"> 
-  <a href="http://lattes.cnpq.br/5345085293597975" target="_blank"><img src="https://img.shields.io/badge/Lattes-2E5469?style=for-the-badge&logo=htmlacademy&logoColor=white" width="123.25" height="28"></a>
+  <a href="http://lattes.cnpq.br/5345085293597975" target="_blank"><img src="https://img.shields.io/badge/Lattes-2E5469?style=for-the-badge&logo=htmlacademy&logoColor=white"></a>
   <a href="www.linkedin.com/in/dansoaresfarias" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://sites.google.com/site/dansoaresfarias/" target="_blank"><img src="https://img.shields.io/badge/-SitesGoogle-1225DA?style=for-the-badge&logo=googlenews&logoColor=white"></a>  
   <a href = "mailto:dansoaresfarias@gmail.com" target="_blank"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white"></a>
