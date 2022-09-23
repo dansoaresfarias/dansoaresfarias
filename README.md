@@ -20,7 +20,7 @@
 
   ##
 <div> 
-  <a href="http://lattes.cnpq.br/5345085293597975" target="_blank"><img src="http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png" width="123.25" height="28" target="_blank"></a>
+  <a href="https://www.institutoinvest.edu.br/assets/img/lattes.png" target="_blank"><img src="http://buscatextual.cnpq.br/buscatextual/images/titulo-sistema.png" width="123.25" height="28" target="_blank"></a>
   <a href="www.linkedin.com/in/dansoaresfarias" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
   <a href="https://sites.google.com/site/dansoaresfarias/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
   <a href="https://instagram.com/dansoaresfarias" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
