@@ -1,6 +1,6 @@
 ### Oi sou Danilo Farias, tecnólogo em análise e desenvolvimento de sistemas, mestre em ciência da computação. 
 ### Atuo como analista de sistemas no HC-UFPE, além de lecionar na Faculdade SENAC-PE no curso de ADS.
-### --
+
 <div align="center">
   <a href="https://github.com/dansoaresfarias">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dansoaresfarias&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
