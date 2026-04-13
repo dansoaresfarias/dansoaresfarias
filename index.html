@@ -1,0 +1,377 @@
+Aqui está o código atualizado. Substituí a paleta de cores por uma combinação moderna e elegante (com tons de Slate, Indigo e detalhes em gradiente) e utilizei as fontes **Inter** (para o corpo do texto, oferecendo excelente legibilidade) e **Montserrat** (para títulos, conferindo uma estética mais arrojada e tecnológica). Também adicionei efeitos de *hover* dinâmicos e seções no estilo "cartão" com sombras suaves.
+
+Substitua o conteúdo do seu arquivo `index.html` por este código:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Currículo Vitae - Danilo Farias Soares da Silva</title>
+    
+    <!-- Importando as novas fontes modernas do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Paleta de Cores Moderna */
+            --primary: #4f46e5; /* Indigo */
+            --primary-hover: #4338ca;
+            --accent: #0ea5e9; /* Light blue */
+            --bg-body: #f8fafc; /* Slate 50 */
+            --bg-card: #ffffff;
+            --text-main: #0f172a; /* Slate 900 */
+            --text-muted: #475569; /* Slate 600 */
+            --gradient: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* Fonte secundária para destaques */
+        h1, h2, h3, .card-title, .skill-badge {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: transparent;
+        }
+
+        header {
+            background: var(--bg-card);
+            padding: 50px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Detalhe colorido no topo do cabeçalho */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--gradient);
+        }
+
+        header h1 {
+            color: var(--text-main);
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info span, .contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+
+        section {
+            background: var(--bg-card);
+            padding: 45px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--text-main);
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Linha decorativa ao lado dos títulos */
+        h3::after {
+            content: '';
+            height: 2px;
+            flex: 1;
+            background: var(--bg-body);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-badge {
+            background: var(--bg-body);
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border: 1px solid rgba(79, 70, 229, 0.15);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .skill-badge:hover {
+            background: var(--gradient);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(79, 70, 229, 0.25);
+        }
+
+        .card {
+            padding: 0 0 25px 0;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-title {
+            color: var(--text-main);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .card-date {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 12px;
+        }
+
+        /* Bullet points modernos e customizados */
+        ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+            }
+            header, section {
+                padding: 30px 20px;
+            }
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .card-date {
+                margin-top: 5px;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- CABEÇALHO -->
+        <header>
+            <h1>Danilo Farias Soares da Silva</h1>
+            <h2>Técnico em TI | Engenheiro de Software | Professor Universitário</h2>
+            <div class="contact-info">
+                <span>📍 Recife, PE - Brasil</span>
+                <span>📞 (081) 2126-3914</span>
+                <a href="https://lattes.cnpq.br/5345085293597975" target="_blank">🔗 Currículo Lattes</a>
+                <a href="https://www.linkedin.com/in/dansoaresfarias/" target="_blank">🔗 LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre">
+            <h3>Perfil Profissional</h3>
+            <p>Graduado em Tecnologia em Análise e Desenvolvimento de Sistemas pelo Instituto Federal de Pernambuco (IFPE), Mestre em Ciência da Computação pela UFPE e especialista em Informática em Saúde pela UNIFESP. Atualmente exerço o cargo de Técnico em Tecnologia da Informação na SPREAD/UFPE, focando em atividades de engenharia de software, requisitos e gestão de processos de negócio. Em paralelo, atuo como Professor Acadêmico na área de Computação na Faculdade SENAC de Pernambuco, com forte experiência docente em diversas instituições.</p>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h3>Competências Técnicas</h3>
+            <div class="skills-container">
+                <span class="skill-badge">Engenharia de Software & BPM</span>
+                <span class="skill-badge">Verificação e Validação</span>
+                <span class="skill-badge">JavaScript & NodeJS</span>
+                <span class="skill-badge">Java (POO)</span>
+                <span class="skill-badge">Banco de Dados (DDL/DML/DQL/DTL)</span>
+                <span class="skill-badge">Informática em Saúde & Telessaúde</span>
+                <span class="skill-badge">Interoperabilidade</span>
+            </div>
+        </section>
+
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
+        <section id="experiencia">
+            <h3>Experiência Profissional</h3>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Técnico em Tecnologia da Informação - UFPE (SPREAD)</span>
+                    <span class="card-date">2010 – Atual</span>
+                </div>
+                <p>Atuação no serviço público com desenvolvimento em engenharia de software, levantamento de requisitos e gestão de processos. Pesquisador colaborador em iniciativas de eHealth e Telessaúde no Hospital das Clínicas.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Professor Assistente - Faculdade SENAC/PE</span>
+                    <span class="card-date">2022 – 2026</span>
+                </div>
+                <p>Docência no ensino superior para o curso de Análise e Desenvolvimento de Sistemas, lecionando disciplinas como Banco de Dados, Arquitetura/Desenvolvimento Back-End e Verificação/Validação de Sistemas.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Instrutor de Back-End - SOFTEX/RECIFE</span>
+                    <span class="card-date">2022 – 2023</span>
+                </div>
+                <p>Atuação na Formação Acelerada de Programadores, ministrando Lógica de Programação, JavaScript, NodeJS, Express e WebServices.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Professor Substituto e Celetista - IFPE, UNINASSAU, FACOL, FSM</span>
+                    <span class="card-date">2010 – 2022</span>
+                </div>
+                <p>Ampla trajetória docente ministrando disciplinas base (Estrutura de Dados, Programação Orientada a Objetos em Java, Desenvolvimento Web) para turmas de Ciência da Computação e Sistemas de Informação.</p>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO ACADÊMICA -->
+        <section id="formacao">
+            <h3>Formação Acadêmica</h3>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Mestrado Profissional em Ciências da Computação - UFPE</span>
+                    <span class="card-date">2013 – 2015</span>
+                </div>
+                <p>Dissertação: BPM e Interoperabilidade entre Sistemas: Apoiando a coleta de dados dos serviços de telessaúde.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Especialização em Informática em Saúde - UNIFESP</span>
+                    <span class="card-date">2017 – 2018</span>
+                </div>
+                <p>Título: Estudo sobre uso de Arquitetura Empresarial em Sistemas de Informação em Saúde.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Graduação em Análise e Desenvolvimento de Sistemas - IFPE</span>
+                    <span class="card-date">2006 – 2008</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h3>Projetos em Destaque</h3>
+            <ul>
+                <li><strong>HealthNet (2010 - 2018):</strong> Auxílio no desenvolvimento e coordenação de ambiente virtual para a provisão de serviços de telessaúde e telemedicina para profissionais de saúde.</li>
+                <li><strong>Amadeus LMS (2007 - 2011):</strong> Sistema de gestão de aprendizagem (EaD) desenvolvido para suportar metodologias de aulas híbridas (blended learning).</li>
+                <li><strong>SIEP-GERENCIA (2007 - 2009):</strong> Sistema de Informação da Educação Profissional, financiado pelo MEC, visando otimizar a gestão acadêmica e a integração de bases de dados locais.</li>
+            </ul>
+        </section>
+
+        <!-- IDIOMAS -->
+        <section id="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+                <li><strong>Espanhol:</strong> Compreende Bem, Lê Bem, Fala e Escreve Razoavelmente.</li>
+                <li><strong>Inglês:</strong> Compreende e Lê Razoavelmente, Fala e Escreve Pouco.</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
+```
