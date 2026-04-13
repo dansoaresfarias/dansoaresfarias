@@ -1,8 +1,3 @@
-Aqui está o código atualizado. Substituí a paleta de cores por uma combinação moderna e elegante (com tons de Slate, Indigo e detalhes em gradiente) e utilizei as fontes **Inter** (para o corpo do texto, oferecendo excelente legibilidade) e **Montserrat** (para títulos, conferindo uma estética mais arrojada e tecnológica). Também adicionei efeitos de *hover* dinâmicos e seções no estilo "cartão" com sombras suaves.
-
-Substitua o conteúdo do seu arquivo `index.html` por este código:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,7 +12,7 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
     
     <style>
         :root {
-            /* Paleta de Cores Moderna */
+            /* Paleta de Cores Modo Claro (Padrão) */
             --primary: #4f46e5; /* Indigo */
             --primary-hover: #4338ca;
             --accent: #0ea5e9; /* Light blue */
@@ -25,7 +20,24 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             --bg-card: #ffffff;
             --text-main: #0f172a; /* Slate 900 */
             --text-muted: #475569; /* Slate 600 */
+            --border-color: #e2e8f0;
+            --shadow-opacity: 0.03;
             --gradient: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        /* Paleta de Cores Modo Escuro (Automático) */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #6366f1; /* Indigo um pouco mais claro para contraste */
+                --primary-hover: #818cf8;
+                --accent: #38bdf8; /* Azul claro vibrante */
+                --bg-body: #0f172a; /* Slate 900 (Fundo principal escuro) */
+                --bg-card: #1e293b; /* Slate 800 (Fundo dos cartões escuro) */
+                --text-main: #f8fafc; /* Slate 50 (Texto principal claro) */
+                --text-muted: #94a3b8; /* Slate 400 (Texto secundário suave) */
+                --border-color: #334155; /* Borda escura */
+                --shadow-opacity: 0.3; /* Sombra mais marcante no escuro */
+            }
         }
 
         * {
@@ -39,6 +51,8 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             background-color: var(--bg-body);
             color: var(--text-muted);
             line-height: 1.7;
+            /* Transição suave ao mudar entre light/dark mode */
+            transition: background-color 0.4s ease, color 0.4s ease; 
         }
 
         /* Fonte secundária para destaques */
@@ -57,10 +71,11 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             padding: 50px;
             border-radius: 16px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, var(--shadow-opacity));
             margin-bottom: 40px;
             position: relative;
             overflow: hidden;
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
         }
 
         /* Detalhe colorido no topo do cabeçalho */
@@ -80,6 +95,7 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             font-weight: 800;
             letter-spacing: -1px;
             margin-bottom: 10px;
+            transition: color 0.4s ease;
         }
 
         header h2 {
@@ -117,8 +133,9 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             background: var(--bg-card);
             padding: 45px;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, var(--shadow-opacity));
             margin-bottom: 30px;
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
         }
 
         h3 {
@@ -128,6 +145,7 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             display: flex;
             align-items: center;
             gap: 15px;
+            transition: color 0.4s ease;
         }
 
         /* Linha decorativa ao lado dos títulos */
@@ -137,6 +155,7 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             flex: 1;
             background: var(--bg-body);
             border-radius: 2px;
+            transition: background-color 0.4s ease;
         }
 
         p {
@@ -156,7 +175,7 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             border-radius: 30px;
             font-size: 0.85rem;
             font-weight: 700;
-            border: 1px solid rgba(79, 70, 229, 0.15);
+            border: 1px solid rgba(79, 70, 229, 0.2);
             transition: all 0.3s ease;
             cursor: default;
         }
@@ -166,13 +185,14 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             color: white;
             border-color: transparent;
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(79, 70, 229, 0.25);
+            box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
         }
 
         .card {
             padding: 0 0 25px 0;
             margin-bottom: 25px;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid var(--border-color);
+            transition: border-color 0.4s ease;
         }
 
         .card:last-child {
@@ -193,6 +213,7 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
             color: var(--text-main);
             font-size: 1.25rem;
             font-weight: 700;
+            transition: color 0.4s ease;
         }
 
         .card-date {
@@ -229,6 +250,7 @@ Substitua o conteúdo do seu arquivo `index.html` por este código:
         strong {
             color: var(--text-main);
             font-weight: 600;
+            transition: color 0.4s ease;
         }
 
         @media (max-width: 768px) {
