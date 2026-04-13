@@ -1,10 +1,7 @@
-### Sou Danilo Farias Soares da Silva, Mestre em Ciência da Computação pela UFPE e Especialista em Informática em Saúde pela UNIFESP. Minha trajetória profissional é definida pela convergência entre a Engenharia de Software e a Educação, com foco estratégico em Tecnologia Educacional e inovação no ensino.
-
-### Com ampla experiência em todo o ciclo de ensino, atuo desde a regência de classe no ensino superior até o planejamento e arquitetura de Ambientes Virtuais de Aprendizagem (LMS/EAD), com domínio avançado da plataforma Moodle. Como Professor na Faculdade SENAC-PE e no IFPE, utilizo Metodologias Ativas para facilitar o aprendizado de disciplinas complexas, como Arquitetura Back-End, Bancos de Dados e Verificação de Sistemas.
-
-### Um dos diferenciais da minha carreira é a produção de conteúdo autoral e Design Educacional. Sou autor de livros didáticos voltados para o ecossistema de Educação Aberta e Digital da UFPE (SPREAD), onde transformo conhecimentos técnicos densos em trilhas de aprendizagem claras e eficazes para a educação a distância (EaD).
-
-### No campo técnico, possuo sólida bagagem em desenvolvimento (JavaScript, Node.js, Java) e Interoperabilidade em Saúde (HealthTech), aplicando rigor científico e as melhores práticas de Engenharia de Requisitos e Processos (BPM) para criar soluções que geram impacto real.
+Sou Danilo Farias Soares da Silva, Mestre em Ciência da Computação pela UFPE e Especialista em Informática em Saúde pela UNIFESP. Minha trajetória profissional é definida pela convergência entre a Engenharia de Software e a Educação, com foco estratégico em Tecnologia Educacional e inovação no ensino.
+Com ampla experiência em todo o ciclo de ensino, atuo desde a regência de classe no ensino superior até o planejamento e arquitetura de Ambientes Virtuais de Aprendizagem (LMS/EAD), com domínio avançado da plataforma Moodle. Como Professor na Faculdade SENAC-PE e no IFPE, utilizo Metodologias Ativas para facilitar o aprendizado de disciplinas complexas, como Arquitetura Back-End, Bancos de Dados e Verificação de Sistemas.
+Um dos diferenciais da minha carreira é a produção de conteúdo autoral e Design Educacional. Sou autor de livros didáticos voltados para o ecossistema de Educação Aberta e Digital da UFPE (SPREAD), onde transformo conhecimentos técnicos densos em trilhas de aprendizagem claras e eficazes para a educação a distância (EaD).
+No campo técnico, possuo sólida bagagem em desenvolvimento (JavaScript, Node.js, Java) e Interoperabilidade em Saúde (HealthTech), aplicando rigor científico e as melhores práticas de Engenharia de Requisitos e Processos (BPM) para criar soluções que geram impacto real.
 
 ### Minhas principais competências e áreas de domínio incluem:
 
@@ -12,14 +9,7 @@
 * Desenvolvimento de Software: Node.js, JavaScript, Java, APIs REST e Arquitetura de Sistemas.
 * Engenharia de Dados & Qualidade: SQL Avançado, Modelagem de Dados, Verificação e Validação de Software (Testes).
 * HealthTech: Informática em Saúde, Telessaúde e Interoperabilidade de Sistemas.
-
-  ##
-<div align="center">
-  <a href="https://github.com/dansoaresfarias">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dansoaresfarias&show_icons=true&theme=vue-dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dansoaresfarias&layout=compact&langs_count=7&theme=vue-dark"/>
-</div>
-  
+   
 ## 
  
 <div align="center">
